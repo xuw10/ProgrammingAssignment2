@@ -24,7 +24,10 @@ makeCacheMatrix <- function(x = matrix())
             message("Fetching the inverse from cache")  
         }
                     
-    inverseMatrix
+        inverseMatrix
+    }
+    list(setMatrix = setMatrix, getMatrix = getMatrix, getInverse = getInverse)
+      
 }
 
 
